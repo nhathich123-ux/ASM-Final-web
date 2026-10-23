@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SUPERCAR STUDIO - Thế Giới Siêu Xe Đỉnh Cao | Lab 7 & 8</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Catamaran:wght@400;500;600;700;800&family=Grand+Hotel&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <style>
+    .cursive-subtitle {
+      font-family: 'Grand Hotel', cursive;
+      color: #ff7700;
+      /* Màu cam chủ đạo */
+      font-size: 1.85rem;
+      display: inline-block;
+      margin-bottom: 0.35rem;
+      letter-spacing: 1px;
+    }
+
+    .badge-status {
+      display: inline-block;
+      padding: 4px 12px;
+      font-size: 0.75rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      border-radius: 20px;
+      color: #ffffff;
+      background: linear-gradient(135deg, #7b2cbf, #ff7700);
+      box-shadow: 0 2px 6px rgba(123, 44, 191, 0.4);
+    }
+
+    .title-line {
+      width: 70px;
+      height: 3px;
+      background: linear-gradient(90deg, #7b2cbf, #ff7700);
+      margin: 8px auto 16px auto;
+      border-radius: 2px;
+    }
+
+    .text-orange {
+      color: #ff7700;
+    }
+
+    .text-purple {
+      color: #7b2cbf;
+    }
+  </style>
+</head>
+
+<body>
+  <header class="header">
+    <div class="container header-container">
+      <a href="#home" class="logo">
+        <img src="images/logo-web.png" alt="Supercar Studio Logo" class="logo-img">
+        <span class="logo-text">SUPER<span class="text-orange">CAR</span></span>
+      </a>
+      <input type="checkbox" id="menu-toggle" class="menu-toggle">
+      <label for="menu-toggle" class="menu-btn" aria-label="Mở thực đơn">
+        <span class="menu-btn-icon menu-icon-bars"><i class="fa-solid fa-bars"></i></span>
+        <span class="menu-btn-icon menu-icon-close"><i class="fa-solid fa-xmark"></i></span>
+      </label>
+
+
+      <nav class="navbar">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#home" class="nav-link active">TRANG CHỦ</a></li>
+          <li class="nav-item"><a href="#about" class="nav-link">GIỚI THIỆU</a></li>
+          <li class="nav-item"><a href="#features" class="nav-link">ĐIỂM NỔI BẬT</a></li>
+          <li class="nav-item"><a href="#products" class="nav-link">BỘ SƯU TẬP</a></li>
+          <li class="nav-item"><a href="#services" class="nav-link">DỊCH VỤ</a></li>
+          <li class="nav-item"><a href="#social" class="nav-link">KẾT NỐI</a></li>
+          <li class="nav-item"><a href="#contact" class="nav-link">LIÊN HỆ</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero-banner" id="home">
+
+    <div class="slideshow">
+      <div class="slide slide-1" style="background-image: url('images/bugatti-2.jpg');"></div>
+      <div class="slide slide-2" style="background-image: url('images/ferrari-1.jpg');"></div>
+      <div class="slide slide-3" style="background-image: url('images/lambo-1.jpg');"></div>
+    </div>
+
+
+    <div class="hero-overlay"></div>
+
+
+    <div class="container hero-content">
+      <span class="cursive-subtitle">Đỉnh Cao Phong Cách & Tốc Độ</span>
+      <h1 class="hero-title">SIÊU XE ĐỈNH CAO</h1>
+      <p class="hero-desc">
+        Chiêm ngưỡng những kiệt tác siêu xe độc bản hàng đầu thế giới với sức mạnh động cơ vượt giới hạn và thiết kế
+        hoàn mỹ.
+      </p>
+
+      <a href="#products" class="btn btn-primary">KHÁM PHÁ</a>
+    </div>
+  </section>
+  <section class="section features-section" id="features">
+    <div class="container">
+      <!-- Tiêu đề mục -->
+      <div class="section-title text-center">
+        <span class="cursive-subtitle">Giá Trị Độc Quyền</span>
+        <h2>Điểm Nổi Bật</h2>
+        <div class="title-line"></div>
+        <p class="section-desc">Những ưu thế vượt trội độc quyền chỉ có tại showroom Supercar Studio</p>
+      </div>
+
+
+      <div class="features-grid">
+
+        <div class="feature-card">
+          <div class="feature-icon">
+            <i class="fa-solid fa-gauge-high"></i>
+          </div>
+          <h3 class="feature-title">Tốc Độ Vượt Trội</h3>
+          <p class="feature-desc">
+            Tăng tốc 0-100 km/h dưới 3 giây cùng khối động cơ V8, V12 và W16 với công suất hơn 1.000 mã lực đầy uy lực.
+          </p>
+        </div>
+
+
+        <div class="feature-card">
+          <div class="feature-icon">
+            <i class="fa-solid fa-pen-ruler"></i>
+          </div>
+          <h3 class="feature-title">Thiết Kế Đỉnh Cao</h3>
+          <p class="feature-desc">
+            Từng đường cong khí động học được gọt giũa hoàn hảo cùng chất liệu sợi carbon siêu nhẹ và khoang lái xa xỉ.
+          </p>
+        </div>
+
+
+        <div class="feature-card">
+          <div class="feature-icon">
+            <i class="fa-solid fa-microchip"></i>
+          </div>
+          <h3 class="feature-title">Công Nghệ Tương Lai</h3>
+          <p class="feature-desc">
+            Hệ thống truyền động hybrid thông minh, treo chủ động và màn hình điều khiển thông minh cảm ứng đa điểm.
+          </p>
+        </div>
+
+
+        <div class="feature-card">
+          <div class="feature-icon">
+            <i class="fa-solid fa-shield-halved"></i>
+          </div>
+          <h3 class="feature-title">An Toàn Tuyệt Đối</h3>
+          <p class="feature-desc">
+            Khung xe Monocoque carbon siêu cứng kết hợp hệ thống phanh gốm carbon hiệu suất cao bảo vệ an toàn tối đa.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section about-section" id="about">
+    <div class="container">
+      <div class="about-grid">
+
+        <div class="about-image-wrapper">
+          <div class="about-image-box">
+            <img src="images/mustang-1.jpg" alt="Ford Mustang GT tại Supercar Studio" class="about-img">
+          </div>
+        </div>
+
+
+        <div class="about-content">
+          <span class="cursive-subtitle">Đam Mê & Bản Lĩnh</span>
+          <h2 class="about-title">SUPERCAR STUDIO</h2>
+          <div class="title-line" style="margin-left: 0;"></div>
+          <p class="about-text">
+            Chào mừng bạn đến với <strong>Supercar Studio</strong> - không gian trải nghiệm và phân phối siêu xe cao cấp
+            hàng đầu Việt Nam. Chúng tôi hội tụ những tuyệt tác cơ khí huyền thoại đến từ Bugatti, Ferrari, Lamborghini
+            và Ford Mustang.
+          </p>
+
+
+          <p class="about-quote"
+            style="border-left: 4px solid #ff7700; padding-left: 16px; font-style: italic; color: #7b2cbf; font-weight: 600; margin: 18px 0;">
+            "Tốc độ không chỉ là một con số, đó là biểu tượng của tinh thần tự do và khát vọng chinh phục mọi đỉnh cao."
+          </p>
+
+          <p class="about-text">
+            Mỗi chiếc xe tại showroom đều trải qua quy trình kiểm định 150 bước theo tiêu chuẩn quốc tế, đảm bảo tình
+            trạng vận hành hoàn hảo và giá trị sưu tầm độc bản.
+          </p>
+
+          <a href="#contact" class="btn btn-primary" style="margin-top: 10px;">TÌM HIỂU THÊM</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="section products-section" id="products">
+    <div class="container">
+
+      <div class="section-title text-center">
+        <span class="cursive-subtitle">Kiệt Tác Cơ Khí</span>
+        <h2>Bộ Sưu Tập Siêu Xe</h2>
+        <div class="title-line"></div>
+      </div>
+
+      <div class="products-grid">
+
+
+        <div class="product-card">
+          <div class="product-image-box">
+
+            <a href="images/bugatti-2.jpg" data-lightbox="cars"
+              data-title="Bugatti Chiron - Động cơ 8.0L W16 Quad-Turbo, Công suất 1.500 Mã lực">
+              <img src="images/bugatti-2.jpg" alt="Bugatti Chiron" class="product-img">
+              <span class="product-zoom-hint"><i class="fa-solid fa-magnifying-glass-plus"></i></span>
+            </a>
+            <span class="badge-status product-badge">Hot</span>
+          </div>
+          <div class="product-body">
+            <h3 class="product-name">Bugatti Chiron</h3>
+            <ul class="product-specs">
+              <li><i class="fa-solid fa-bolt text-orange"></i> Động cơ: 8.0L W16 Quad-Turbo</li>
+              <li><i class="fa-solid fa-gauge-high text-purple"></i> 0-100 km/h: 2.4 giây</li>
+              <li><i class="fa-solid fa-tachograph-digital text-orange"></i> Tốc độ tối đa: 420 km/h</li>
+            </ul>
+            <div class="product-footer">
+              <span class="product-price">3.000.000 $</span>
+              <a href="#contact" class="btn-sm btn-outline">ĐẶT MUA</a>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="product-card">
+          <div class="product-image-box">
+            <a href="images/ferrari-1.jpg" data-lightbox="cars"
+              data-title="Ferrari LaFerrari - Động cơ 6.3L V12 Hybrid, Công suất 950 Mã lực">
+              <img src="images/ferrari-1.jpg" alt="Ferrari LaFerrari" class="product-img">
+              <span class="product-zoom-hint"><i class="fa-solid fa-magnifying-glass-plus"></i></span>
+            </a>
+            <span class="badge-status product-badge">Hiếm</span>
+          </div>
+          <div class="product-body">
+            <h3 class="product-name">Ferrari LaFerrari</h3>
+            <ul class="product-specs">
+              <li><i class="fa-solid fa-bolt text-orange"></i> Động cơ: 6.3L V12 Hybrid HY-KERS</li>
+              <li><i class="fa-solid fa-gauge-high text-purple"></i> 0-100 km/h: 2.6 giây</li>
+              <li><i class="fa-solid fa-tachograph-digital text-orange"></i> Tốc độ tối đa: 350 km/h</li>
+            </ul>
+            <div class="product-footer">
+              <span class="product-price">2.200.000 $</span>
+              <a href="#contact" class="btn-sm btn-outline">ĐẶT MUA</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-image-box">
+            <a href="images/lambo-1.jpg" data-lightbox="cars"
+              data-title="Lamborghini Centenario - Động cơ 6.5L V12 Hút khí tự nhiên, 770 Mã lực">
+              <img src="images/lambo-1.jpg" alt="Lamborghini Centenario" class="product-img">
+              <span class="product-zoom-hint"><i class="fa-solid fa-magnifying-glass-plus"></i></span>
+            </a>
+            <span class="badge-status product-badge">Giới hạn</span>
+          </div>
+          <div class="product-body">
+            <h3 class="product-name">Lamborghini Centenario</h3>
+            <ul class="product-specs">
+              <li><i class="fa-solid fa-bolt text-orange"></i> Động cơ: 6.5L V12 N/A Tự nhiên</li>
+              <li><i class="fa-solid fa-gauge-high text-purple"></i> 0-100 km/h: 2.8 giây</li>
+              <li><i class="fa-solid fa-tachograph-digital text-orange"></i> Tốc độ tối đa: 350 km/h</li>
+            </ul>
+            <div class="product-footer">
+              <span class="product-price">2.500.000 $</span>
+              <a href="#contact" class="btn-sm btn-outline">ĐẶT MUA</a>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="product-card">
+          <div class="product-image-box">
+            <a href="images/mustang-1.jpg" data-lightbox="cars"
+              data-title="Ford Mustang GT - Động cơ 5.0L V8 Coyote Đầy Uy Lực, 480 Mã lực">
+              <img src="images/mustang-1.jpg" alt="Ford Mustang GT" class="product-img">
+              <span class="product-zoom-hint"><i class="fa-solid fa-magnifying-glass-plus"></i></span>
+            </a>
+            <span class="badge-status product-badge">Yêu thích</span>
+          </div>
+          <div class="product-body">
+            <h3 class="product-name">Ford Mustang GT</h3>
+            <ul class="product-specs">
+              <li><i class="fa-solid fa-bolt text-orange"></i> Động cơ: 5.0L V8 Coyote V8</li>
+              <li><i class="fa-solid fa-gauge-high text-purple"></i> 0-100 km/h: 4.2 giây</li>
+              <li><i class="fa-solid fa-tachograph-digital text-orange"></i> Tốc độ tối đa: 250 km/h</li>
+            </ul>
+            <div class="product-footer">
+              <span class="product-price">120.000 $</span>
+              <a href="#contact" class="btn-sm btn-outline">ĐẶT MUA</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <section class="section services-section" id="services">
+    <div class="container">
+
+      <div class="section-title text-center">
+        <span class="cursive-subtitle">Đặc Quyền Khách Hàng</span>
+        <h2>Dịch Vụ Chuyên Nghiệp</h2>
+        <div class="title-line"></div>
+        <p class="section-desc">Hệ thống dịch vụ hậu mãi<br><strong>&</strong><br>hỗ trợ kỹ thuật tiêu chuẩn 5 sao quốc
+          tế</p>
+      </div>
+
+
+      <div class="services-grid">
+
+
+        <div class="service-card">
+          <div class="service-icon">
+            <i class="fa-solid fa-wrench"></i>
+          </div>
+          <h3 class="service-title">Bảo Dưỡng Chuyên Sâu</h3>
+          <p class="service-desc">
+            Xưởng dịch vụ đạt chuẩn quốc tế cùng đội ngũ kỹ thuật viên được đào tạo trực tiếp từ Ý và Đức, đảm bảo hiệu
+            suất vận hành tốt nhất.
+          </p>
+          <a href="#contact" class="service-link">Tìm hiểu thêm <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+
+
+        <div class="service-card">
+          <div class="service-icon">
+            <i class="fa-solid fa-comments"></i>
+          </div>
+          <h3 class="service-title">Tư Vấn Cá Nhân Hóa</h3>
+          <p class="service-desc">
+            Hỗ trợ cấu hình màu sơn độc bản (Bespoke), tùy biến nội thất da cao cấp và giải quyết các thủ tục thông quan
+            nhập khẩu trọn gói.
+          </p>
+          <a href="#contact" class="service-link">Tìm hiểu thêm <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+
+
+        <div class="service-card">
+          <div class="service-icon">
+            <i class="fa-solid fa-car"></i>
+          </div>
+          <h3 class="service-title">Đăng Ký Lái Thử</h3>
+          <p class="service-desc">
+            Cảm nhận sức mạnh gầm rú và độ nhạy tay lái trực tiếp trên đường thử chuyên nghiệp dưới sự đồng hành của
+            chuyên gia huấn luyện lái xe an toàn.
+          </p>
+          <a href="#contact" class="service-link">Tìm hiểu thêm <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="section social-section" id="social">
+    <div class="container">
+      <div class="section-title text-center">
+        <span class="cursive-subtitle">Cộng Đồng Đam Mê</span>
+        <h2>Kết Nối Với Chúng Tôi</h2>
+        <div class="title-line"></div>
+        <p class="section-desc">Cập nhật tin tức siêu xe nóng hổi qua Fanpage Facebook và kênh Video chính thức (Lab
+          7.2)</p>
+      </div>
+
+
+      <div class="social-grid">
+
+
+        <div class="social-card">
+          <div class="social-header">
+            <i class="fa-brands fa-facebook text-purple"></i>
+            <h3>Fanpage Facebook</h3>
+          </div>
+          <div class="embed-wrapper fb-wrapper">
+
+            <iframe
+              src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Ffacebook&tabs=timeline&width=500&height=400&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId"
+              width="100%" height="400" style="border:none;overflow:hidden;border-radius:8px;" scrolling="no"
+              frameborder="0" allowfullscreen="true"
+              allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+              title="Facebook Fanpage Plugin">
+            </iframe>
+          </div>
+          <p class="embed-note" style="font-size: 0.85rem; color: #777; margin-top: 10px; text-align: center;">
+            <i class="fa-solid fa-circle-info text-orange"></i> Nhấn Thích & Chia sẻ để theo dõi tin tức siêu xe mới
+            nhất hàng ngày!
+          </p>
+        </div>
+
+
+        <div class="social-card">
+          <div class="social-header">
+            <i class="fa-brands fa-youtube text-orange"></i>
+            <h3>Video Siêu Xe Đỉnh Cao</h3>
+          </div>
+          <div class="embed-wrapper video-wrapper">
+
+            <iframe src="https://www.youtube.com/embed/PjGkVCAo9b4" title="Supercars Sound and Acceleration Showcase"
+              width="100%" height="400" style="border:none;border-radius:8px;" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen>
+            </iframe>
+          </div>
+          <p class="embed-note" style="font-size: 0.85rem; color: #777; margin-top: 10px; text-align: center;">
+            <i class="fa-solid fa-play text-purple"></i> Xem toàn màn hình để cảm nhận uy lực âm thanh ống xả của cỗ máy
+            V12.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <section class="section contact-section" id="contact">
+    <div class="container">
+      <div class="section-title text-center">
+        <span class="cursive-subtitle">Đồng Hành Cùng Khách Hàng</span>
+        <h2>Liên Hệ Showroom</h2>
+        <div class="title-line"></div>
+        <p class="section-desc">Quý khách vui lòng để lại thông tin để nhận báo giá ưu đãi và lịch hẹn lái thử riêng
+          biệt</p>
+      </div>
+
+
+      <div class="contact-grid">
+
+
+        <div class="contact-info">
+          <h3 class="contact-info-title">SUPERCAR STUDIO VIETNAM</h3>
+          <p class="contact-info-desc">
+            Không gian trưng bày đạt tiêu chuẩn cao cấp quốc tế với phòng đón tiếp VIP, khu vực cá nhân hóa cấu hình xe
+            và xưởng kỹ thuật tiêu chuẩn toàn cầu.
+          </p>
+
+          <ul class="contact-list">
+            <li class="contact-item">
+              <span class="contact-item-icon"><i class="fa-solid fa-location-dot"></i></span>
+              <div class="contact-item-text">
+                <strong>Địa chỉ Showroom:</strong>
+                <p>Công viên Phần mềm Quang Trung, Phường Tân Chánh Hiệp, Quận 12, TP. Hồ Chí Minh</p>
+              </div>
+            </li>
+
+            <li class="contact-item">
+              <span class="contact-item-icon"><i class="fa-solid fa-phone"></i></span>
+              <div class="contact-item-text">
+                <strong>Đường dây nóng VIP:</strong>
+                <p>0900 123 456 - 0988 888 999</p>
+              </div>
+            </li>
+
+            <li class="contact-item">
+              <span class="contact-item-icon"><i class="fa-solid fa-envelope"></i></span>
+              <div class="contact-item-text">
+                <strong>Thư điện tử:</strong>
+                <p>contact@supercarstudio.vn</p>
+              </div>
+            </li>
+
+            <li class="contact-item">
+              <span class="contact-item-icon"><i class="fa-solid fa-clock"></i></span>
+              <div class="contact-item-text">
+                <strong>Thời gian làm việc:</strong>
+                <p>Thứ 2 - Chủ Nhật: 08:30 - 20:30 (Đón tiếp 24/7 theo lịch hẹn VIP)</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+
+        <div class="contact-form-wrapper">
+          <form action="#" method="post" class="contact-form">
+
+            <div class="form-group">
+              <label for="fullname">Họ và tên của bạn <span class="required text-orange">*</span></label>
+              <input type="text" id="fullname" name="fullname" class="form-input" placeholder="Ví dụ: Nguyễn Văn An"
+                required>
+            </div>
+
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="email">Địa chỉ Email <span class="required text-orange">*</span></label>
+                <input type="email" id="email" name="email" class="form-input" placeholder="example@gmail.com" required>
+              </div>
+              <div class="form-group">
+                <label for="phone">Số điện thoại <span class="required text-orange">*</span></label>
+                <input type="tel" id="phone" name="phone" class="form-input" placeholder="0901 234 567" required>
+              </div>
+            </div>
+
+
+            <div class="form-group">
+              <label for="car-select">Dòng siêu xe quan tâm</label>
+              <select id="car-select" name="car_select" class="form-select">
+                <option value="">-- Vui lòng chọn mẫu xe mong muốn --</option>
+                <option value="bugatti">Bugatti Chiron (1.500 HP)</option>
+                <option value="ferrari">Ferrari LaFerrari (950 HP)</option>
+                <option value="lamborghini">Lamborghini Centenario (770 HP)</option>
+                <option value="mustang">Ford Mustang GT (480 HP)</option>
+                <option value="camaro">Chevrolet Camaro V8</option>
+                <option value="bespoke">Yêu cầu đặt mẫu xe độc bản khác</option>
+              </select>
+            </div>
+
+
+            <div class="form-group">
+              <label for="message">Nội dung yêu cầu tư vấn / Lời nhắn</label>
+              <textarea id="message" name="message" rows="4" class="form-textarea"
+                placeholder="Nhập mong muốn về thời gian lái thử, yêu cầu gói phụ kiện hoặc báo giá..."></textarea>
+            </div>
+
+
+            <button type="submit" class="btn btn-primary btn-block">GỬI YÊU CẦU TƯ VẤN</button>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="map-section" id="map">
+    <div class="map-container">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.44366148992!2d106.625691274806!3d10.853821089299684!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752bee0b0ef9e5%3A0x5b4da59e47aa97a8!2zQ8O0bmcgVmnDqm4gUGjhuqduIE3hu4FtIFF1YW5nIFRydW5n!5e0!3m2!1svi!2s!4v1700000000000!5m2!1svi!2s"
+        width="100%" height="420" style="border:0; display:block;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade" title="Bản đồ vị trí Showroom Supercar Studio">
+      </iframe>
+    </div>
+  </section>
+
+
+  <footer class="footer">
+    <div class="container">
+
+      <div class="footer-grid">
+
+
+        <div class="footer-col footer-brand">
+          <a href="#home" class="logo footer-logo">
+            <img src="images/logo-web.png" alt="Supercar Studio Logo" class="logo-img">
+            <span class="logo-text">SUPER<span class="text-orange">CAR</span></span>
+          </a>
+          <p class="footer-desc">
+            Supercar Studio là trung tâm phân phối siêu xe cao cấp độc quyền tại Việt Nam, mang đến chuẩn mực thượng lưu
+            và trải nghiệm tốc độ không giới hạn.
+          </p>
+        </div>
+
+
+        <div class="footer-col footer-links">
+          <h4 class="footer-heading">Liên Kết Nhanh</h4>
+          <ul class="footer-nav">
+            <li><a href="#home"><i class="fa-solid fa-angle-right text-orange"></i> Trang Chủ</a></li>
+            <li><a href="#about"><i class="fa-solid fa-angle-right text-orange"></i> Giới Thiệu</a></li>
+            <li><a href="#features"><i class="fa-solid fa-angle-right text-orange"></i> Điểm Nổi Bật</a></li>
+            <li><a href="#products"><i class="fa-solid fa-angle-right text-orange"></i> Bộ Sưu Tập</a></li>
+            <li><a href="#services"><i class="fa-solid fa-angle-right text-orange"></i> Dịch Vụ</a></li>
+            <li><a href="#contact"><i class="fa-solid fa-angle-right text-orange"></i> Liên Hệ</a></li>
+          </ul>
+        </div>
+
+
+        <div class="footer-col footer-social">
+          <h4 class="footer-heading">Mạng Xã Hội</h4>
+          <p class="footer-social-text">Theo dõi chúng tôi trên các nền tảng truyền thông để nhận video review và lịch
+            sự kiện ra mắt xe:</p>
+          <div class="social-icons">
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="social-btn fb"
+              aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="social-btn ig"
+              aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" class="social-btn yt"
+              aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+            <a href="https://tiktok.com" target="_blank" rel="noopener noreferrer" class="social-btn tt"
+              aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+          </div>
+        </div>
+
+      </div>
+
+
+      <div class="footer-bottom text-center">
+        <p>&copy; 2026 SUPERCAR STUDIO. Bài thực hành Lab 7 & Lab 8 - Xây dựng trang Web - FPT Polytechnic.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"></script>
+
+</body>
+
+</html>
